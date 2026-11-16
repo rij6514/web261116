@@ -69,6 +69,10 @@ function renderCards(list) {
  <h2>${m.title}</h2>
  <p class="year">${m.year}</p>
  </div>`;
+        card.dataset.id = m.id;
+        card.onclick = () => {
+            alert(m.overview);
+        }
         board.appendChild(card);
     }
     document.getElementById("count").textContent = list.length + "편";
