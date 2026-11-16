@@ -19,12 +19,16 @@ body {
     color: var(--text);
 }
 
-main, .top, .hero, footer {
+main,
+.top,
+.hero,
+footer {
     max-width: 1100px;
     margin: 0 auto 24px;
 }
 
-h1, footer {
+h1,
+footer {
     color: var(--text);
 }
 
@@ -54,7 +58,7 @@ p a {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("https://image.tmdb.org/t/p/w1280/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://image.tmdb.org/t/p/w1280/r08LxMJCbf1SiJIWeyH9aJmdqwC.jpg");
     background-size: cover;
     background-position: center;
     min-height: 40vh;
@@ -76,7 +80,7 @@ p a {
 .card {
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     background: var(--text);
     position: relative;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -129,12 +133,12 @@ p a {
     color: var(--warn);
 }
 
-.change.down::before{
+.change.down::before {
     content: "▼";
     color: var(--accent);
 }
 
-.change.new::before{
+.change.new::before {
     content: "NEW";
     color: var(--warn);
 }
@@ -170,10 +174,12 @@ p a {
 }
 
 @keyframes pulse {
+
     0%,
     100% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.15);
     }
@@ -195,7 +201,7 @@ p a {
     .board {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .detail {
         grid-template-columns: 1fr 2fr;
     }
@@ -215,7 +221,7 @@ p a {
     }
 
     .board {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(6, 1fr);
     }
 }
 
@@ -224,4 +230,16 @@ p a {
         background: #1f2429;
         color: var(--text);
     }
+}
+
+.card.hot .badge {
+    background: crimson;
+    color: #fff;
+}
+
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
 }
